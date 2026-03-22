@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import BookingForm from "./components/BookingForm";
 import SeatMap from "./components/SeatMap";
 import Message from "./components/Message";
@@ -78,6 +79,8 @@ export default function App() {
 
         <Message message={message} />
       </div>
+
+      <Analytics />
     </div>
   );
 }
